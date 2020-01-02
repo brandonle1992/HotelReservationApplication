@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using HotelReservationApplication.Data.Entities;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace HotelReservationApplication.Application.Common.Interfaces
 {
@@ -14,5 +14,7 @@ namespace HotelReservationApplication.Application.Common.Interfaces
         DbSet<Room> Rooms { get; set; }
         DbSet<ReservationDetail> ReservationDetails { get; set; }
         DbSet<RoomType> RoomType { get; set; }
+
+        Task<int> SaveChangesAsync(CancellationToken canellationToken);
     }
 }
