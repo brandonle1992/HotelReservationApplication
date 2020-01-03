@@ -18,9 +18,4 @@
     <ProjectReference Include="..\HotelReservationApplication.Data\HotelReservationApplication.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Reservations\Command\" />
-    <Folder Include="RoomTypes\Queries\" />
-  </ItemGroup>
-
 </Project>
