@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace HotelReservationApplication.Data.Entities
 {
@@ -15,6 +14,6 @@ namespace HotelReservationApplication.Data.Entities
         public string State { get; set; }
         public int ZipCode { get; set; }
 
-        public ICollection<Reservation> Reservations { get; set; }
+        public virtual ICollection<Reservation> Reservations { get; set; }
     }
 }

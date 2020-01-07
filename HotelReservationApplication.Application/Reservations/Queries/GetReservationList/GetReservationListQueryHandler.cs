@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace HotelReservationApplication.Application.Reservations.Queries.GetReservationByCustomerID
+namespace HotelReservationApplication.Application.Reservations.Queries.GetReservationList
 {
     public class GetReservationListQueryHandler
     {

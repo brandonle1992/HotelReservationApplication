@@ -18,6 +18,6 @@ namespace HotelReservationApplication.Data.Entities
         public DateTime? HireDate { get; set; }
 
 
-        public ICollection<Reservation> Reservations { get; private set; }
+        public virtual ICollection<Reservation> Reservations { get; private set; }
     }
 }

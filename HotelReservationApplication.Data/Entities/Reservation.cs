@@ -17,10 +17,12 @@ namespace HotelReservationApplication.Data.Entities
         public DateTime? Checkin { get; set; }
         public DateTime? Checkout { get; set; }
 
+        public decimal TotalPrice { get; set; }
 
 
-        public Customer Customer { get; set; }
-        public Employee Employee { get; set; }
-        public ReservationDetail ReservationDetails { get; set; }
+
+        public virtual Customer Customer { get; set; }
+        public virtual Employee Employee { get; set; }
+        public virtual ReservationDetail ReservationDetails { get; set; }
     }
 }

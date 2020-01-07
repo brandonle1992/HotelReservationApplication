@@ -13,12 +13,12 @@ namespace HotelReservationApplication.Data.Entities
 
         public Guid ID { get; set; }
         public Guid ReservationDetailID { get; set; }
-        public float PercentChange { get; set; }
+        public int PercentChange { get; set; }
         public string? PromoCode { get; set; }
         public bool Discount { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
 
-        public ICollection<ReservationDetail> ReservationDetails { get; set; }
+        public virtual ICollection<ReservationDetail> ReservationDetails { get; set; }
     }
 }

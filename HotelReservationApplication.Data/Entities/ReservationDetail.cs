@@ -10,9 +10,15 @@ namespace HotelReservationApplication.Data.Entities
         public Guid RoomID { get; set; }
         public Guid? EventID { get; set; }
 
-        public float Price { get; set; }
+        //Reservation Detail should show the customer itemization of the reservation.
+        public decimal BasePrice { get; set; }
+        public decimal TaxPrice { get; set; }
+        public decimal FeePrice { get; set; }
+        public decimal TotalPrice { get; set; }
 
-        public Room Room { get; set; }
-        public SpecialEvent? Event { get; set; }
+        public virtual Room Room { get; set; }
+        public virtual SpecialEvent? Event { get; set; }
+        public virtual Reservation Reservation{ get; set; }
+
     }
 }
